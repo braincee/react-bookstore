@@ -8,6 +8,7 @@ function Book(props) {
       <li>
         {`${book.title} : ${book.author}`}
       </li>
+      <button type="button">Remove</button>
     </div>
   );
 }
