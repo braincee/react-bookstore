@@ -10,7 +10,7 @@ A simple bookstore react app built with react that has the following functionali
 - JavaScript
 - React
 - Redux
-
+- React-Router
 
 To get a local copy up and running follow these simple example steps.
 
