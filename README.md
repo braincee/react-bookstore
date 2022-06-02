@@ -7,7 +7,9 @@ A simple bookstore react app built with react that has the following functionali
 
 ## Built With
 
+- JavaScript
 - React
+- Redux
 
 
 To get a local copy up and running follow these simple example steps.
@@ -16,7 +18,7 @@ Run the following:
    ```
    git clone https://github.com/braincee/react-bookstore.git
 
-   cd math-magicians
+   cd react-bookstore
 
    npm install
 
