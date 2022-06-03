@@ -1,15 +1,20 @@
 import React from 'react';
+import AddBook from './AddBook';
 import Book from './Book';
 
-/* eslint-disable react/prop-types */
 function Books() {
-  const books = [];
+  const books = [
+    { id: 1, title: 'Harry Potter', author: 'JK. Rowlings' },
+    { id: 2, title: 'Bad Boys', author: 'Will Smith' },
+  ];
   return (
     <div>
-      <ul>
-        { books.length > 0 ? books.map((book) => (<Book key={book.id} book={book} />)) : '' }
+      <ul className="books">
+        { books.map((book) => (<Book key={book.id} title={book.title} author={book.author} />))}
       </ul>
-      <button type="button">Remove</button>
+      <div>
+        <AddBook />
+      </div>
     </div>
   );
 }

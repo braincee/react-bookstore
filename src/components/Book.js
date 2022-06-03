@@ -1,14 +1,14 @@
 import React from 'react';
 
 /* eslint-disable react/prop-types */
-function Book(props) {
-  const { book } = props;
+function Book({ title, author }) {
   return (
-    <div>
-      <li>
-        {`${book.title} : ${book.author}`}
-      </li>
-      <button type="button">Remove</button>
+    <div className="book">
+      <ul>
+        <li>{author}</li>
+        <li>{title}</li>
+      </ul>
+      <button type="button" className="remove">Remove</button>
     </div>
   );
 }
