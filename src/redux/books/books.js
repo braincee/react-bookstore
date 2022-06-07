@@ -5,6 +5,7 @@ const initialState = {
   books: [
     { id: 1, title: 'Harry Potter', author: 'JK. Rowlings' },
     { id: 2, title: 'Bad Boys', author: 'Will Smith' },
+    { id: 3, title: 'Rush Hour', author: 'Jackie Chan' },
   ],
 };
 
@@ -13,12 +14,12 @@ export default function booksReducer(state = initialState, action) {
     case ADD_BOOK:
       return {
         ...state,
-        books: state.books.concat(action.payload),
+        books: state.books.concat(action.book),
       };
     case REMOVE_BOOK:
       return {
         ...state,
-        books: state.books.filter((book) => book.id !== action.payload),
+        books: state.books.filter((book) => book.id !== action.id),
       };
     default: return state;
   }
@@ -26,10 +27,10 @@ export default function booksReducer(state = initialState, action) {
 
 export const addBook = (book) => ({
   type: ADD_BOOK,
-  payload: book,
+  book,
 });
 
-export const removeBook = (bookId) => ({
+export const removeBook = (id) => ({
   type: REMOVE_BOOK,
-  payload: bookId,
+  id,
 });
