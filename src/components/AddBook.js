@@ -7,6 +7,7 @@ const AddBook = () => {
   const [book, setBook] = useState({
     title: '',
     author: '',
+    category: '',
   });
 
   const dispatch = useDispatch();
@@ -27,6 +28,7 @@ const AddBook = () => {
       setBook({
         title: '',
         author: '',
+        category: '',
       });
     }
   };

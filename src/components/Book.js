@@ -14,8 +14,9 @@ const Book = (props) => {
   return (
     <div className="book">
       <ul>
-        <li>{book.author}</li>
         <li>{book.title}</li>
+        <li>written by</li>
+        <li>{book.author}</li>
       </ul>
       <button type="button" className="remove" onClick={clickEvent}>Remove</button>
     </div>
