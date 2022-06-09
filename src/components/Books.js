@@ -1,17 +1,26 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { getBooks } from '../redux/books/books';
 import Book from './Book';
+import AddBook from './AddBook';
 
-/* eslint-disable react/prop-types */
-function Books() {
-  const books = [];
+const Books = () => {
+  const books = useSelector((state) => state.books);
+  const newBooks = books.books;
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getBooks());
+  }, [newBooks.length]);
+
   return (
     <div>
-      <ul>
-        { books.length > 0 ? books.map((book) => (<Book key={book.id} book={book} />)) : '' }
+      <ul className="books">
+        { newBooks.length > 0 ? newBooks.map((book) => (<Book key={book.id} book={book} />)) : ''}
       </ul>
-      <button type="button">Remove</button>
+      <AddBook />
     </div>
   );
-}
+};
 
 export default Books;
