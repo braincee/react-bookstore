@@ -25,6 +25,19 @@ Run the following:
    npm start
    ```
 
+   ## ScreenShots
+
+   ![](./public/Screenshot%20(103).png)
+
+   Added four books of title and author
+
+   ![](./public/Screenshot%20(104).png)
+
+   Deleted two books of title and author
+
+   ![](./public/Screenshot%20(105).png)
+
+   Added extra three books to the list to make it five books. 
 
 ### Run tests
 
