@@ -11,11 +11,11 @@ const Books = () => {
 
   useEffect(() => {
     dispatch(getBooks());
-  }, [newBooks.length]);
+  }, [dispatch]);
 
   return (
-    <div>
-      <ul className="books">
+    <div className="container-1">
+      <ul className="container-2">
         { newBooks.length > 0 ? newBooks.map((book) => (<Book key={book.id} book={book} />)) : ''}
       </ul>
       <AddBook />
