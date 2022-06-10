@@ -1,39 +1,33 @@
-body {
+.App {
+  background-color: rgb(241, 240, 240);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul,
+h1,
+h2,
+h3,
+h4,
+p {
   padding: 0;
-  margin-left: 100px;
-  background-color: aliceblue;
+  margin: 0;
 }
 
-.navbar {
-  display: flex;
-  flex-direction: row;
-  gap: 30px;
-  background-color: whitesmoke;
-  font-size: 20px;
-}
-
-.navbar a {
+li {
   list-style: none;
 }
 
-.books {
+a {
+  text-decoration: none;
+}
+
+.container-1 {
+  margin: 0;
+  padding: 30px 100px;
+}
+
+.container-2 {
+  gap: 15px;
   display: flex;
   flex-direction: column;
-  max-width: 500px;
-}
-
-.book {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 100px;
-  margin-top: 10px;
-}
-
-.book li {
-  list-style: none;
-}
-
-form {
-  margin-top: 100px;
 }

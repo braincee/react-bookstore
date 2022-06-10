@@ -1,0 +1,40 @@
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  background: rgb(255, 255, 255);
+  padding: 20px 100px;
+  gap: 45px;
+  align-items: center;
+}
+
+.navbar .book-title {
+  display: flex;
+  font-size: 30px;
+  font-weight: bold;
+  font-stretch: normal;
+  color: rgb(2, 144, 255);
+}
+
+.navbar .navbar-link {
+  display: flex;
+  gap: 40px;
+  font-size: 13px;
+  font-weight: normal;
+  letter-spacing: 1.9px;
+  color: #121212;
+}
+
+.navbar-link a:hover {
+  background-color: rgb(2, 114, 255);
+  color: aliceblue;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.navbar .user-icon {
+  padding: 14px;
+  border-radius: 50%;
+  margin-left: auto !important;
+  color: rgb(2, 144, 255);
+  border: 1px solid rgb(232, 232, 232);
+}
